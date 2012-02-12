@@ -13,6 +13,7 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var Program = require('../lib/program');
 var EventEmitter = require('events').EventEmitter;
+var fakeReporter = require('./support/fake_reporter');
 
 /**
  * Context.
@@ -39,6 +40,26 @@ describe('Runner', function() {
       expect(function() {
         runner.run(program);
       }).to.throw();
+    });
+
+    describe('spawn process', function() {
+      it('should emit out event when the child program prints something', function(done) {
+        var reporter = fakeReporter();
+        var program = new Program('test/support/whiny.js');
+        var runner = new Runner(reporter);
+        var out = '';
+
+        runner.on('out', function(text) {
+          out += text.toString();
+        });
+
+        runner.on('end', function() {
+          out.should.eql('Foo\nBar\n');
+          done();
+        });
+
+        runner.run(program);
+      });
     });
   });
 
