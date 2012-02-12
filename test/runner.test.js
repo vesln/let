@@ -13,7 +13,6 @@ var should = require('chai').should();
 var expect = require('chai').expect;
 var Program = require('../lib/program');
 var EventEmitter = require('events').EventEmitter;
-var fakeReporter = require('./support/fake_reporter');
 
 /**
  * Context.
@@ -44,9 +43,8 @@ describe('Runner', function() {
 
     describe('spawn process', function() {
       it('should emit out event when the child program prints something', function(done) {
-        var reporter = fakeReporter();
         var program = new Program('test/support/whiny.js');
-        var runner = new Runner(reporter);
+        var runner = new Runner;
         var out = '';
 
         runner.on('out', function(text) {
@@ -60,20 +58,6 @@ describe('Runner', function() {
 
         runner.run(program);
       });
-    });
-  });
-
-  describe('reporter', function() {
-    it('should be a reporter accessor', function() {
-      var runner = new Runner;
-      runner.reporter({}).reporter().should.eql({});
-    });
-  });
-
-  describe('constructor', function() {
-    it('should set supplied reporter', function() {
-      var runner = new Runner({});
-      runner.reporter().should.eql({});
     });
   });
 });
