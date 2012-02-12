@@ -6,7 +6,7 @@
   , "keywords": [""]
   , "author": "Veselin Todorov <hi@vesln.com>"
   , "dependencies": {
-      "flatiron": "0.1.7"
+      "flatiron": "0.1.11"
   }
   , "devDependencies": {
       "mocha": "*"
