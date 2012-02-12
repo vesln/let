@@ -24,7 +24,7 @@
   , "bin": {
       "let": "./bin/let"
   }
-  , "main": "./lib/index"
+  , "main": "./lib/app"
   , "engines": { 
       "node": ">= 0.6.0"
   }
