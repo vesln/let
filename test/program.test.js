@@ -50,6 +50,12 @@ describe('Program', function() {
 
       var program = new Program(path.join(__dirname, 'app.test.js'));
       program.exists().should.be.true;
+
+      var program = new Program('test/support/whiny.js');
+      program.exists().should.be.true;
+
+      var program = new Program('test/support/whiny');
+      program.exists().should.be.true;
     });
   });
 });
