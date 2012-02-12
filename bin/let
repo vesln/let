@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+/*!
+ * let - Force timeouts.
+ *
+ * Veselin Todorov <hi@vesln.com>
+ * MIT Licesnse.
+ */
+
+/**
+ * Dispatch the argv 
+ */
+require('../lib/app').start();
