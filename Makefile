@@ -1,4 +1,4 @@
-TESTS = $(wildcard test/*.test.js)
+TESTS = $(wildcard test/*.test.js) $(wildcard test/commands/*.test.js)
 REPORTER = dot
 
 test:
