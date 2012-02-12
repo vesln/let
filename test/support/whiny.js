@@ -2,7 +2,7 @@
  * let - Force timeouts.
  *
  * Veselin Todorov <hi@vesln.com>
- * MIT Licesnse.
+ * MIT License.
  */
 
 console.log('Foo');

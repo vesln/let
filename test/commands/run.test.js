@@ -2,7 +2,7 @@
  * let - Force timeouts.
  *
  * Veselin Todorov <hi@vesln.com>
- * MIT Licesnse.
+ * MIT License.
  */
 
 /**
@@ -18,8 +18,5 @@ var EventEmitter = require('events').EventEmitter;
 var run = require('../../lib/commands/run');
 
 describe('run', function() {
-  it('should return an event emitter instance', function() {
-    run().should.be.an.instanceof(EventEmitter);
-  });
 });
 
