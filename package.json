@@ -1,9 +1,9 @@
 {
     "name": "let"
   , "preferGlobal": "true"
-  , "version": "0.0.0"
+  , "version": "0.0.1"
   , "description": ""
-  , "keywords": [""]
+  , "keywords": ["timeout", "force timeouts"]
   , "author": "Veselin Todorov <hi@vesln.com>"
   , "dependencies": {
       "flatiron": "0.1.11"
