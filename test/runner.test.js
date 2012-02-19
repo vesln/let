@@ -41,7 +41,7 @@ describe('Runner', function() {
       }).to.throw();
     });
 
-    describe('spawn process', function() {
+    describe('when spawn process', function() {
       it('should emit out event when the child program prints something', function(done) {
         var program = new Program('test/support/whiny.js');
         var runner = new Runner;
@@ -57,6 +57,29 @@ describe('Runner', function() {
         });
 
         runner.run(program);
+      });
+
+      describe('and the kill is called', function() {
+        it('should send kill signal', function(done) {
+          var program = new Program('test/support/term.js');
+          var runner = new Runner;
+          var out = '';
+
+          runner.on('out', function(text) {
+            out += text.toString();
+          });
+
+          runner.on('end', function() {
+            out.should.eql('SIGTERM\n');
+            done();
+          });
+
+          runner.run(program);
+
+          setTimeout(function() {
+            runner.kill();
+          }, 100);
+        });
       });
     });
   });
