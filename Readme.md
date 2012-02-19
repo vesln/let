@@ -4,8 +4,10 @@
 
 ## Description
 
-box is powered module for CLI junkies that want quick and dirty way to save snippets and notes
-directly from their terminal.
+let lets you run a node.js script a specified amount of time. If the
+script takes too long it will be killed. This is useful if you are
+working with legacy systems that are out of your control and you want to
+ensure that your system won't be overloaded.
 
 let is using the awesome [flatiron framework](https://github.com/flatiron).
 
