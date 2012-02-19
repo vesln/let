@@ -14,12 +14,11 @@ let is using the awesome [flatiron framework](https://github.com/flatiron).
 ## Synopsis
 
 ```   
-   let 
+ let 
    
-   Usage:
-     let run <path/to/file.js> --timeout <time-in-ms>
+ Usage:
+   let run <path/to/file.js> --timeout <time-in-ms>
    
-   Author: Veselin Todorov <hi@vesln.com>
 ```
 
 ## Requirements
