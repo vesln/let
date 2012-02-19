@@ -2,7 +2,7 @@
     "name": "let"
   , "preferGlobal": "true"
   , "version": "0.0.1"
-  , "description": ""
+  , "description": "Fight legacy systems with style."
   , "keywords": ["timeout", "force timeouts"]
   , "author": "Veselin Todorov <hi@vesln.com>"
   , "dependencies": {
