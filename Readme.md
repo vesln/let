@@ -14,7 +14,7 @@ let is using the awesome [flatiron framework](https://github.com/flatiron).
 ## Synopsis
 
 ```   
-let run <path/to/file.js> --timeout <time-in-ms>
+let-node run <path/to/file.js> --timeout <time-in-ms>
 ```
 
 ## Requirements

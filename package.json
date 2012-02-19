@@ -23,7 +23,7 @@
       "test": "make test"
   }
   , "bin": {
-      "let": "./bin/let"
+      "let-node": "./bin/let"
   }
   , "main": "./lib/app"
   , "engines": { 
