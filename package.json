@@ -1,7 +1,7 @@
 {
     "name": "let"
   , "preferGlobal": "true"
-  , "version": "0.0.2"
+  , "version": "0.0.3"
   , "description": "Fight legacy systems with style."
   , "keywords": ["timeout", "force timeouts"]
   , "author": "Veselin Todorov <hi@vesln.com>"
@@ -26,7 +26,7 @@
       "let-node": "./bin/let"
   }
   , "main": "./lib/app"
-  , "engines": { 
+  , "engines": {
       "node": ">= 0.6.0"
   }
 }
