@@ -13,14 +13,14 @@ let is using the awesome [flatiron framework](https://github.com/flatiron).
 
 ## Synopsis
 
-```   
+```
 let-node run <path/to/file.js> --timeout <time-in-ms>
 ```
 
 ## Requirements
 
 - NPM (http://npmjs.org/)
-- Node.js 0.6 (http://nodejs.org/)
+- Node.js 0.8 (http://nodejs.org/)
 
 ## Install
 
